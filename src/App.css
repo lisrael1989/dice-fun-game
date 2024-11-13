@@ -1,19 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
 #app {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0.5rem;
+  /* max-width: 100%; */
+  /* margin: 0 auto; */
+  /* padding: 0.5rem; */
   text-align: center;
   background-color: wheat;
   border-radius: 1rem;
-  font-family: 'Courier New', Courier, monospace;
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.game-title {
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -24,6 +32,7 @@
   justify-content: center;
   background: rgb(123, 123, 230);
   background: linear-gradient(90deg, rgba(123, 123, 230, 1) 37%, rgba(0, 212, 255, 1) 52%);
+  border-radius: 1rem;
 }
 
 .btn-section {

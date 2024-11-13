@@ -91,7 +91,7 @@ function App() {
 
   return (
     <main>
-      <h1> 🎲 Dice Game 🎲</h1>
+      <h1 className="game-title"> 🎲 Dice Game 🎲</h1>
       <section className="container">
         <div className="dice-section">
           <img src={`/public/dice-${dice1}.png`} alt={`Dice ${dice1}`} className="dice" />
