@@ -43,13 +43,35 @@ function App() {
     });
   }
 
+  function turnOver() {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Your score is 0 and the turn go to second player',
+    });
+  }
+
   function handleRollDice() {
     const diceTotal = rollDice();
 
-    if (currentPlayer === 1) {
-      setPlayer1CurrentScore((prev) => prev + diceTotal);
+    if (dice1 === 6 && dice2 === 6) {
+      if (currentPlayer === 1) {
+        turnOver();
+        setPlayer1Score(0);
+        setPlayer1CurrentScore(0);
+        setCurrentPlayer(2);
+      } else {
+        turnOver();
+        setPlayer2Score(0);
+        setPlayer2CurrentScore(0);
+        setCurrentPlayer(1);
+      }
     } else {
-      setPlayer2CurrentScore((prev) => prev + diceTotal);
+      if (currentPlayer === 1) {
+        setPlayer1CurrentScore((prev) => prev + diceTotal);
+      } else {
+        setPlayer2CurrentScore((prev) => prev + diceTotal);
+      }
     }
   }
 
