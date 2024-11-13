@@ -116,8 +116,8 @@ function App() {
       <h1 className="game-title"> 🎲 Dice Game 🎲</h1>
       <section className="container">
         <div className="dice-section">
-          <img src={`/public/dice-${dice1}.png`} alt={`Dice ${dice1}`} className="dice" />
-          <img src={`/public/dice-${dice2}.png`} alt={`Dice ${dice2}`} className="dice" />
+          <img src={`public/dice-${dice1}.png`} alt={`Dice ${dice1}`} className="dice" />
+          <img src={`public/dice-${dice2}.png`} alt={`Dice ${dice2}`} className="dice" />
         </div>
         <GameButtons handleRollDice={handleRollDice} handleHold={handleHold} newGame={newGame} currentPlayer={currentPlayer} />
       </section>
